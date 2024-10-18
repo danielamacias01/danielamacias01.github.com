@@ -1,0 +1,175 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header,nav,main,footer{
+    width: 97%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Work Sans", sans-serif;
+}
+header{
+    height: 50px;
+    background-color: #CE7095;
+    color: #F7F1E1;
+}
+nav{
+    height: 50px;
+    background-color: #FFDBD7;
+}
+main{
+    height: auto;
+    background-color: #CE7095; 
+}
+section{
+    /*width: 880px;*/
+    height:auto;
+    padding: 30px;
+    background-color: #FFB2C1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+footer{
+    height: 50px;
+    background-color: #855E6E;
+    color: antiquewhite;
+    text-align: center;
+}
+h1{
+    font-family: "Marcellus", serif;
+}
+h2{
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 35px;
+}
+p{
+     font-family: "Work Sans", sans-serif;
+}
+h1,h5{
+    text-align: center;
+}
+ul{
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    width: 80px;
+    padding: 10px;
+    background-color: #FFB2C1;
+    color: #855E6E;
+    border-color: #855E6E;
+    border-width: 3px;
+    border-style: solid;
+    
+}
+nav ul li:hover{
+    background-color: #F7F1E1;
+}
+nav ul li a:hover{  
+    color: #855E6E;
+    font-size: 17px;
+    font-weight: bold;
+}
+nav ul li a:link, nav,ul li a:visited{
+    color: #855E6E;
+    text-decoration: none;
+}
+img{
+    width: 800px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+#viaje{
+  height: auto;
+  width: 100%;
+}
+#tecla{
+    width: 100px;
+}
+h2,p{
+    color:#F7F1E1;
+    border-width: 3px;
+}
+h2{
+    margin-bottom: 20px;
+}
+h3{
+    color: floralwhite;
+}
+#Playa_con_arcoiris{
+    width: 300px;
+    float:right;
+    margin-left: 10px;
+}
+#Universal{
+    width: 300px;
+    float:left;
+    margin-right: 10px;
+    margin-top: auto;
+    }
+main nav{
+    width: 825px;
+}
+#icono{
+    width: 32;
+    height: auto;
+    float: 
+}
+#fondo_section{
+    background-image: url("../imagenes/hojas%20fondo.jpg");
+}
+
+#filtro img{
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    padding: 10px;
+}
+#filtro {
+    text-align: center;
+}
+#img1{
+    filter: brightness(150%);
+}
+#img2{
+    filter: contrast(50%);
+}
+#img3{
+    filter: grayscale(100%);
+}
+#img4{
+    filter: invert(100%);
+}
+#img5{
+    filter: opacity(50%);
+}
+#img6{
+    filter: sepia(100%);
+}
+#img7{
+    filter: saturate(150%);
+}
+#img8{
+    filter: blur(3px);
+}
+#img9{
+    filter: drop-shadow(10px 5px 20px white);
+}
+#img10{
+    filter: contrast(50%) blur(2px); 
+}
+#img11{
+    filter: hue-rotate(60deg);
+}
+section #filtro img{
+    text-align: center;
+}
+iframe, audio{
+    display: block;
+    margin: 0 auto;
+}

@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formularios html</title>
+<link href="../ccs/style.page.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		form{
+			width: 50%;
+			height: auto;
+			padding: 30px;
+			background-color:#9A2C7A;
+			color:floralwhite;
+			margin: 0 auto;
+        }
+		label, input{
+			margin-left: 10px;
+            margin-bottom: 20px;
+		}
+		input[type=text], input[type=password], input[type=number], input[type=select],input[type=email],input[type=date],input[type=file], select{
+			width: 95%;
+			color:#9A2C7A;
+			padding: 10px;
+			font-weight: bold;
+			border-radius: 10px;
+			background-color:#E1BBD0;
+            margin-bottom: 20px;
+            
+		}
+		input[type=submit]{
+			width: 10%;
+			background-color:#E1BBD0;
+			margin-top: 20px;
+			padding: 10px;
+			margin: 
+			border-radius: 10px;
+			color: floralwhite;
+			
+		}
+		input[type=text]:focus,input[type=password]:focus{
+			background-color: #F7E8F5
+		}
+		input[type=number]{
+			width: 95%;
+			background-color:#E1BBD0;
+			margin-top: 20px;
+			padding: 10px;
+			border-radius: 10px;
+			color: #9A2C7A;
+		}
+        	input[type=submit],input[type=reset]{
+			width: 20%;
+			background-color: #E1BBD0;
+			padding: 10px;
+
+			margin-top: 20px;
+			border-radius: 10px;
+			font-weight: bolder;
+            color: floralwhite;
+        }
+        
+		select{
+			width: 95%;
+			background-color:#E1BBD0;
+			margin-top: 20px;
+			padding: 10px;
+			border-radius: 10px;
+			color:#9A2C7A;
+		}
+		input[type=number]:focus, select:focus{
+			background-color: #F7E8F5;
+				}
+        P{
+            margin-bottom: 20px;
+        }
+        label{
+    		padding-top: 20px;
+        }
+        
+	</style>
+</head>
+
+<body>
+<header>
+  <h1>Formularios&nbsp;</h1>
+</header>
+<nav>
+		 <ul>
+                 <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../html/listas.html">Listas</a></li>
+                    <li><a href="enlaces.html">Enlaces</a></li>
+                    <li><a href="tablas.html">Tablas</a></li>
+                    <li><a href="imagenes.html">Imágenes</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="formularios.html">Formulario</a></li>
+  </ul>
+</nav>
+<main>
+  <section>
+    <h2>Formulario usuario 1&nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ipsum, repellat consequuntur atque veritatis ut, error in aperiam blanditiis illo nisi nam laboriosam. Quaerat velit optio corporis, aliquid, a numquam cum laudantium nulla natus eum autem ab sed dolorem modi beatae tempora quia eaque dolores minima possimus, ut dolor. Eaque quia rem debitis assumenda, ipsa id! Facilis fugit veniam delectus cupiditate et ut dicta asperiores unde sunt obcaecati ab, aut minus explicabo, illum nobis eveniet, provident fugiat exercitationem porro quo dolor. Ullam ratione, dolores esse! Praesentium odit quibusdam pariatur amet ducimus, saepe, voluptatem, quis vel alias earum omnis magni neque.</p>
+	  <br>
+	  <form action="" method="get">
+		  <label id="">Nombre:</label>
+		  <input type="text" id="nombre" name="nombre">
+          <br>
+		  <label id="">Contraseña:</label>
+		  <input type="password" id="contrasena" name="contrasena">
+		  <br>
+		  <input type="submit" value="Enviar">
+	  
+	  </form>
+  </section>
+  <section>
+    <h2>Este es el contenido de la etiqueta H2 de diseño</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic consequatur nisi dolore, aut maxime facere saepe possimus modi vel, repudiandae unde cum exercitationem, vero deleniti maiores incidunt id neque voluptate explicabo doloribus rem. Numquam in laborum, veniam architecto consequuntur laboriosam deleniti libero animi ab consequatur dolor asperiores dolorum dolorem earum exercitationem recusandae modi, neque hic, maxime. Nisi sint totam omnis minima, delectus eligendi veritatis beatae quidem temporibus quisquam eos vero id deserunt reprehenderit officiis voluptatum est, magnam, ipsa ipsam earum aliquam provident voluptas eveniet. Voluptatem sint nostrum eum dicta similique iste hic, at error minus reprehenderit assumenda, odit optio quis.</p>
+    <form id="form1" name="form1" method="get">
+<label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre">
+      <label for="number">edad:</label>
+      <input type="number" name="edad" id="number" main="18" max="90">
+    
+      <label for="Estado">Select:</label>
+      <select name="estado" id="estado">
+		  <option value="Aguascalientes">Aguascalientes</option>
+		  <option value="Colima">Colima</option>
+		  <option value="Durango">Durango</option>
+		  <option value="Jalisco">Jalisco</option>
+		  <option value="Nayarit">Nayarit</option>
+		  <option value="Puebla">Puebla</option>
+		  <input type="submit" value="Enviar">
+      </select>
+      
+    </form>
+  </section>
+  <section>
+    <h2>Este es el contenido de la etiqueta H2 de diseño</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cum voluptates, nam sit odio, consequuntur repellendus. Neque, accusamus, placeat dolor deserunt cumque tempora doloribus amet iste sunt laudantium voluptatibus suscipit at cupiditate minima. Dolorem nisi, nam veritatis in blanditiis a, at placeat eaque, fugit aliquam voluptates consectetur veniam! Magnam provident mollitia id dolorem excepturi sint esse, quo hic minus nihil quia aut quam possimus necessitatibus enim neque itaque eum, quos asperiores cupiditate! Harum unde delectus velit officiis voluptatibus. Velit, asperiores expedita nesciunt aperiam rerum voluptate, earum veritatis cumque perferendis dignissimos aliquid necessitatibus ex quibusdam atque odit modi. Harum, quos, adipisci?</p>
+	  <br>
+    <form id="form2" name="form2" method="post">
+<label for="textfield">Nombre:</label>
+      <input type="text" name="textfield" id="textfield">
+      <br>
+        <label for="genero">Genero</label>
+        <br>
+	  <table style="width: 80%;">
+        <tr>
+			<td style="text-align: center;"> <input type="radio" name="genero" value="Fem" id="genero_0"></td>
+		  <td><label>
+            Femenino</label></td>
+        </tr>
+        <tr>
+			<td style="text-align: center;"> <input type="radio" name="genero" value="Mas" id="genero_1"></td>
+			 <td><label>
+            Masculino</label></td>
+        </tr>
+        <tr>
+			<td style="text-align: center;"> <input type="radio" name="genero" value="Otro" id="genero_2"></td>
+			 <td><label>
+            Otro</label></td>
+        </tr>
+      </table>
+      <label for="musica">¿Cual es tu genero favorito?</label>
+      <p>
+          <br>
+        <input style="margin-left:10px;" type="checkbox" name="Musica" value="pop" id="Musica_0">
+        <label>pop</label>
+        <br>
+	    <input style="margin-left:10px;" type="checkbox" name="Musica" value="rock" id="Musica_1">
+        <label>rock</label>
+        <br>
+	    <input style="margin-left:10px;" type="checkbox" name="Musica" value="clasica" id="Musica_2">
+        <label>clasica</label>
+        <br>
+	    <input style="margin-left:10px;" type="checkbox" name="Musica" value="tropical" id="Musica_3">
+        <label>tropical</label>
+        <br>
+	    <input style="margin-left:10px;" type="checkbox" name="Musica" value="jazz" id="Musica_4">
+        <label>jazz</label>
+        <br>
+		   <input type="submit" value="Enviar">
+      </p>
+    </form>
+  </section>
+  <section>
+    <h2>Este es el contenido de la etiqueta H2 de diseño</h2>
+    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, repellendus exercitationem, aspernatur delectus reprehenderit aperiam, impedit sunt excepturi illum, et culpa beatae. Ratione voluptate repellendus quibusdam voluptatem, consequuntur sed quam similique officia temporibus, modi illum quod doloremque provident rerum fugit perferendis in possimus recusandae porro quae cupiditate! Eum mollitia, dolorem similique aliquam explicabo id est tempora laboriosam sequi nam repudiandae saepe consectetur accusantium enim excepturi impedit, tenetur eveniet ab facere, nobis praesentium sapiente vitae. Beatae laborum harum dicta vel doloremque suscipit architecto consequuntur, aperiam vero non quod numquam, molestias illo? Odio, iure enim at? Veritatis rerum ullam, a. At, eum.</p>
+       <br>
+           <form action="" method="get">
+		  	<label for="Nombre2">Nombre(s):</label><br>
+            <input type="text" id="fname" name="fname" value="Maria"><br>
+            <label for="Apellidos">Apellidos:</label><br>
+            <input type="text" id="lname" name="lname" value="Macías"><br>
+            <label for="fechanacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="birthday" name="birthday"><br>
+            <label for="identi">Cardex:</label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <label for="matricula">Matricula:</label>
+            <input type="text" id="matricula" name="matricula">
+               <br>
+            <label for="Paises">¿Cuantas vaces haz salido de tu país?:</label>
+              <input type="number" name="paises" id="paises" min="1" max="50">
+               <br>
+             <label for="pais">¿Que país te gustaria conocer?</label>
+			  <table  style="width=80%;">
+                <tr>
+                    <td><input type="radio" name="francia" value="fra" id="pais_0">
+                    </td>
+                    <td><label>Francia</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gracia" value="gre" id="pais_1"></td>
+                    <td><label> Grecia</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="italia" value="it" id="pais_2"></td>
+                    <td><label> Italia</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="canada" value="can" id="pais_3"></td>
+                    <td><label> Canada</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="argentina" value="arg" id="pais_4"></td>
+                    <td><label> Argentina</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="Otro" value="otro" id="pais_5"></td>
+                    <td><label>Otro</label></td>
+                </tr>
+                
+              </table>
+             
+               	<label for="Paises">Selecciona los paises que concideres más caros:</label>
+                
+			<p>
+                <br>
+			  <input style="margin-left:10px;" type="checkbox" name="Paises" value="rusia" id="viaje_0">
+              <label>Rusia</label>
+			  <br>
+			  <input style="margin-left:10px;" type="checkbox" name="Paises" value="alemania" id="viaje_1">
+              <label>Alemania</label>
+			  <br>
+			  <input style="margin-left:10px;" type="checkbox" name="Paises" value="indonesia" id="viaje_2">
+              <label>Indonesia</label>
+			  <br>
+			  <input style="margin-left:10px;" type="checkbox" name="Paises" value="rumania" id="viaje_3">
+              <label>Rumania</label>
+			  <br>
+			  <input style="margin-left:10px;" type="checkbox" name="Paises" value="brasil" id="viaje_5">
+              <label>Brasil</label>
+			  <br>
+              <input style="margin-left:10px;" type="checkbox" name="Paises" value="costa" id="viaje_6">
+              <label>Costa rica</label>
+			  <br>
+              <input style="margin-left:10px;" type="checkbox" name="Paises" value="otro" id="viaje_7">
+              <label>Otro</label>
+			  <br>
+			  </p>
+              <label for="select">¿Qué medio de transporte te da mas miedo?</label>
+              <select name="transporte" id="actividades">
+				  <option value="barco">Barco</option>
+				  <option value="avion">Avión</option>
+                  <option value="auto">Automovil</option> 
+                  <option value="camion">Camión</option> 
+			  </select>
+               <label for="color">Color que te recuerde un viaje:</label>
+               
+            <input type="color" id="color" name="color" value="#ff0000">
+               <br>
+               <input type="submit" value="ENVIAR">
+               <input type="reset" value="RESET">
+			
+		  </form>
+  </section>
+</main>
+<footer>
+  <h5>Elaborado por Daniela Macias Parra</h5>
+</footer>
+</body>
+</html>

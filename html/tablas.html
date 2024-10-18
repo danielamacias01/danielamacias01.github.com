@@ -1,0 +1,407 @@
+<html>
+    <head>
+        <title> Tablas en html</title>
+        <link rel="stylesheet" href="../ccs/style.page.css" type ="text/css">
+        <style type="text/css">
+            #tabla_uno{
+                width: 100%;
+                margin: 0 auto;
+                color: #F7F1E1;
+                margin: 10px;
+                border-style: solid;
+                border-color: #855E6E;
+                border-width: 5px;
+                border-spacing: 10px;
+             }
+            #tabla_uno th{
+                background-color: #855E6E;
+                text-align: center;
+            }
+            #tabla_uno td{
+                background-color: #FFDBD7;
+                color: black;
+                border-radius: 3px;
+                margin: 10px;
+                border-style: solid;
+                border-color: #855E6E;
+                border-width: 3px;
+            }
+            #tabla2{
+                color:#F7F1E1; 
+                background-color: #855E6E;
+                border-style: solid;
+                border-color: #855E6E;
+                border-width: 5px;
+                border-spacing: 10px;
+            }
+            #tabla2 td{
+                height: 40px;
+                padding: 10px;
+                background-color: #FFDBD7;
+                color: #855E6E;
+            }
+            .celda_centrada{
+                text-align: center;
+                padding: 0px;
+                background-color: #F7F1E1;
+            }
+            .tabla_dos{
+                width: 700px;
+                border-collapse: collapse;
+                margin: 0 auto;
+            }
+            .tabla_dos td, .tabla_dos th{
+                width: 150px;
+                padding: 10px;
+                border-style: dashed;
+            }
+             #tabla_zebra{
+                width: 100%;
+                border-style: solid;
+                border-color: #855E6E;
+                border-width: 5px;
+                border-spacing: 5px;
+                padding: 15px;
+                height: 30px;
+                border-collapse: collapse;
+            }
+            #tabla_zebra tbody tr:nth-child(even){
+                background-color: antiquewhite;
+                padding: 10px;
+                height: 30px;
+            }
+            #tabla_zebra tbody tr:nth-child(odd){
+                background-color:#FFDBD7;
+                 height: 30px;
+            }
+            #tabla_zebra thead tr{
+                background-color: #855E6E;
+                color: floralwhite;
+            }
+            #tabla_zebra td{
+                padding: 10px;
+                border-width: 5px;
+                border-style: solid;
+            }
+            .tabla_hover{
+                width: 70%;
+                background-color: #855E6E;
+                border-color: #855E6E;
+                text-align: left;
+                border-width: 3px;
+                margin: 10px;
+                border-spacing: 10px;
+                border-collapse: collapse;
+                border-style: solid;
+            }
+            .tabla_hover tr:hover{
+                background-color: #F7F1E1;
+                color:#855E6E; 
+                font-weight: bold;
+            }
+            .tabla_hover thead tr{
+                color: floralwhite;
+                text-align: center;
+            }
+            .tabla_hover tbody{
+                background-color: #FFDBD7;
+            }
+            .tabla_hover tbody tr{
+                width: 100%;
+                height: 30px;
+                background-color: #FFDBD7;
+            }
+            .tabla_hover td{
+                padding: 10px;
+                border-width: 5px;
+                width: 5px;
+                border-style: solid;     
+            }
+            #tabla4{
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Tablas en html</h1>
+        </header>
+        <nav>
+             <ul>
+             <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="listas.html">Listas</a></li>
+                    <li><a href="enlaces.html">Enlaces</a></li>
+                    <li><a href="tablas.html">Tablas</a></li>
+                    <li><a href="imagenes.html">Imágenes</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="formularios.html">Formulario</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section style="overflow-x: auto">
+                <h2>Planificadores</h2>
+                <p>La planificación de viajes es crucial para garantizar una experiencia fluida y sin contratiempos. Sin una preparación adecuada, incluso el destino más hermoso puede convertirse en un estrés, con imprevistos que podrían haberse evitado. Es aquí donde entra el uso de tablas, una herramienta simple pero extremadamente útil para organizar todos los aspectos del viaje, desde los vuelos y alojamientos hasta las actividades y tiempos libres.</p>
+                <br>
+                <p>Las tablas permiten visualizar de manera clara y estructurada todos los detalles importantes. Por ejemplo, puedes tener una tabla con las fechas de salida y llegada, los horarios de vuelos, los alojamientos reservados y la dirección de cada uno, lo cual facilita la gestión del tiempo y asegura que no se te olvide nada. Además, puedes usar tablas para planificar actividades diarias, con espacios para anotar horarios, precios, sitios recomendados, e incluso cosas que no puedes perderte en cada lugar. A continuacion te dejo ejemplos de como acomodar tu información.</p>
+                <br>
+                <table border="1" id="tabla_uno">
+                    <thead>
+                        <tr>
+                            <th>Fecha de vuelo</th>
+                            <th>Nombre</th>
+                            <th>Numero de vuelo</th>
+                            <th>Hora de salida</th>
+                            <th>Aeropuero de llegada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>21/02/2025</td>
+                            <td>Daniela</td>
+                            <td>BA2490</td>
+                            <td>01:30 am</td>
+                            <td>Charles de Gaulle</td>
+                        </tr>
+                        <tr>
+                            <td>20/02/2025</td>
+                            <td>Maria</td>
+                            <td>BA2491A</td>
+                            <td>16:30 pm</td>
+                            <td>Orly</td>
+                        </tr>
+                        <tr>
+                            <td>22/02/2025</td>
+                            <td>Ali</td>
+                            <td>AA993</td>
+                            <td>10:40 am</td>
+                            <td>Charles de Gaulle</td>
+                        </tr>
+                        <tr>
+                            <td>21/02/2025</td>
+                            <td>Santiago</td>
+                            <td>BA2490</td>
+                            <td>01:30 am</td>
+                            <td>Charles de Gaulle</td>
+                        </tr>
+                        <tr>
+                            <td>20/02/2025</td>
+                            <td>Camila</td>
+                            <td>BA2491A</td>
+                            <td>16:30 pm</td>
+                            <td>Orly</td>
+                        </tr>
+                       
+                    </tbody>
+                    <tfood></tfood>
+                </table>
+            </section>
+            <section style="overflow-x: auto">
+                <h2>Itinerario</h2>
+                <p>Este es otro ejemplo de cómo organizar los distritos que conocerás por día en París, destacando las cosas más importantes de cada uno. Esta planificación te permitirá aprovechar al máximo tu tiempo en la ciudad, asegurando que no te pierdas ninguno de los lugares más emblemáticos. Desde el arte y la historia en el Museo del Louvre en el Distrito 1, hasta la bohemia atmósfera de Montmartre en el Distrito 18, cada zona de París ofrece algo único. Organizar tu itinerario por distritos es una excelente manera de explorar la ciudad de manera eficiente, sin sentirte abrumado por la cantidad de lugares que puedes visitar.</p>
+                <br>
+                <table id="tabla2" class="tabla_dos">
+                    <thead>
+                        <tr>
+                            <th style="width: 200px;">Distrito</th>
+                            <th style="width: 100px;">Restaurante</th>
+                            <th style="width: 200px;" colspan="2">Atividades</th>
+                            <th style="width: 100px;">Precio aproximado</th>
+                        </tr>
+                    </thead>
+                    <tboby>
+                        <tr>
+                            <td>1er Louvre</td>
+                            <td style="text-align:center; padding:0px;">Au Pied de Cochon</td>
+                            <td style="with">Museo de louvre</td>
+                            <td>Jardines de tulerias</td>
+                            <td style="background-color: #F7F1E1; text-align: center;
+                            padding: 0px;">€80 p/p</td>
+                        </tr>
+                        <tr>
+                            <td>4to Hotel de ville</td>
+                            <td style="text-align:center; padding:0px; text-align: center;
+                            padding: 0px;">La Dame de Paris</td>
+                            <td>catedral de Notre-Dame</td>
+                            <td>Centro Pompidou</td>
+                            <td style="background-color: #F7F1E1; text-align: center;
+                            padding: 0px;">€50 p/p</td>
+                        </tr>
+                        <tr>
+                            <td>10mo Entrepot</td>
+                            <td style="text-align:center; padding:0px; text-align: center;
+                            padding: 0px;">Les Rupins</td>
+                            <td>Bonne Nouvelle,</td>
+                            <td>Estrasburgo-Saint-Denis</td>
+                            <td style=" background-color: #F7F1E1; text-align: center;
+                            padding: 0px;">€40 p/p</td>
+                        </tr>
+                        <tr>
+                            <td>3ro Temple</td>
+                            <td style="text-align:center; padding:0px; text-align: center;
+                            padding: 0px;">Les Enfants Rouges</td>
+                            <td>Museo de Picasso</td>
+                            <td>La casa de Nicolas Flamel</td>
+                            <td style="background-color: #F7F1E1; text-align: center;
+                            padding: 0px;">€80 p/p</td>
+                        </tr>
+                        <tr>
+                            <td>18 Butte-Montmartre</td>
+                            <td style="text-align:center; padding:0px; text-align: center;
+                            padding: 0px;">Sacrée Fleur</td>
+                            <td>Basílica del Sacré Cœur</td>
+                            <td>mur des Je T'aime</td>
+                            <td style="background-color: #F7F1E1; text-align: center;
+                            padding: 0px;">€100 p/p</td>
+                        </tr>
+                    </tboby>
+                    <tfoot>
+                        <tr> 
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Total</td>
+                            <td class ="celda_centrada" style="background-color: #855E6E; color: floralwhite;">€350 p/p</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section style="overflow-x: auto">
+                <h2>Traslados</h2>
+                <p>Este es un ejemplo por si decides conocer varias ciudades en el mismo viaje. Lo ideal es planificar tus traslados de manera estratégica, de forma que puedas disfrutar lo mejor de cada destino sin sentirte apresurada. </p>
+                <br>
+                <table border="1" id="tabla_zebra">
+                    <thead>
+                        <tr>
+                            <th>Lugar</th>
+                             <th>Dias de estancia</th>
+                             <th>Transporte</th>
+                             <th>Airb&b</th>
+                             <th>Telefono de contacto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Paris</td>
+                            <td>10</td>
+                            <td>Avión</td>
+                            <td>Pierrefitte-sur-Seine</td>
+                            <td>2245678909</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Londres</td>
+                            <td>7</td>
+                            <td>Tren</td>
+                            <td>Stockwell Gardens Estate</td>
+                            <td>2245675421</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Madrid</td>
+                            <td>5</td>
+                            <td>Metro</td>
+                            <td>Rivas-Vaciamadrid</td>
+                            <td>2245843697</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Barcelona</td>
+                            <td>4</td>
+                            <td>Metro</td>
+                            <td>Santa Coloma de Gramenet</td>
+                            <td>2245684653</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Italia</td>
+                            <td>5</td>
+                            <td>Uber</td>
+                            <td>Condominio en Turín</td>
+                            <td>2245684653</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Grecia</td>
+                            <td>3</td>
+                            <td>Metro</td>
+                            <td>Hotel en Karterádos</td>
+                            <td>2245684653</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section  style="overflow-x:auto">
+                <p>Aquí te dejo otro ejemplo de cómo organizar tu viaje si vas con amigos, asegurándote de que no se les pase ninguna actividad importante. La clave es dividir el día en actividades que todos disfruten y asignar tiempos específicos para cada una. Por ejemplo, puedes comenzar el día con una visita a un museo o monumento emblemático, como la Torre Eiffel, luego disfrutar de un almuerzo en un restaurante local y por la tarde realizar una actividad más relajada, como un paseo por los jardines de Luxemburgo o un recorrido por las tiendas y mercados. Al final del día, puedes disfrutar de una cena en grupo y un plan nocturno para explorar la vida nocturna de la ciudad. Utilizando esta organización, todos podrán participar en cada momento del viaje y aprovechar al máximo la experiencia sin dejar que se les escape nada importante.</p>
+                <br>
+                <table border="1" id="tabla4" class="tabla_hover">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                             <th>Edad</th>
+                             <th>Transporte</th>
+                             <th>Presupuesto</th>
+                             <th>Actividad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Maria</td>
+                            <td>19</td>
+                            <td>linea 1</td>
+                            <td>€30</td>
+                            <td>Torre Eifel</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Jose</td>
+                            <td>18</td>
+                            <td>linea 10</td>
+                            <td>€70</td>
+                            <td>Parque de principes</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Daniel</td>
+                            <td>21</td>
+                            <td>linea 6</td>
+                            <td>€50</td>
+                            <td>Maxims</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Fernando</td>
+                            <td>20</td>
+                            <td>linea 2</td>
+                            <td>2245684653</td>
+                            <td>Arco del triunfo</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Rebeca</td>
+                            <td>21</td>
+                            <td>ROR</td>
+                            <td>€150</td>
+                            <td>Disney paris</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Ali</td>
+                            <td>21</td>
+                            <td>linea 5</td>
+                            <td>€90</td>
+                            <td>Molino rojo</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <p>El uso de estas herramientas no solo te ahorra tiempo, sino que también te ayuda a aprovechar al máximo tu experiencia. Con una planificación clara, puedes disfrutar de la espontaneidad en tu viaje sin la presión de tener que tomar decisiones apresuradas o perderte de algo importante.</p>
+            </section>
+        </main>
+        <footer>
+            <h5>Elaborado por Daniela Macias Parra</h5>
+        </footer>
+    </body>
+</html>
